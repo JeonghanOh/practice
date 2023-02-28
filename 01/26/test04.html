@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+        var _cycle = parseInt(prompt("배열의 크기를 입력해주세요"));
+        var array = new Array(_cycle);
+        var i;
+        var tmp = "입력한 숫자들은 ";
+
+        for (i = 0; i < _cycle; i++) {
+            var m = parseInt(prompt("배열 " + (i + 1) + "번째 값을 넣어주세요"));
+            if (m !== null) array[i] = m;
+            else array[i] = 0;
+            console.log(array[i] + " ");
+            tmp += array[i] + " ";
+        }
+        alert(tmp);
+
+        var n = parseInt(prompt("몇번째를 출력하시겠습니까?"));
+        alert(n + "번째 값은 " + array[n - 1]);
+
+    </script>
+</body>
+
+</html>

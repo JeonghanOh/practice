@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            var n=parseInt(prompt("price?"));
+
+            if(n>=500000){
+                n=parseInt(0.8*n);
+            }
+            else if(n>=300000){
+                n=parseInt(0.9*n);
+            }
+            else if(n>=100000){
+                n=parseInt(0.95*n);
+            }
+
+            document.write(n);
+        </script>
+    </body>
+</html>

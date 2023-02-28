@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+        var n = parseInt(prompt("숫자를 입력하세요"));
+        var _rst = "";
+        
+        switch (n) {
+            case 1:
+                _rst = "일요일";
+                break;
+            case 2:
+                _rst = "월요일";
+                break;
+            case 3:
+                _rst = "화요일";
+                break;
+            case 4:
+                _rst = "수요일";
+                break;
+            case 5:
+                _rst = "목요일";
+                break;
+            case 6:
+                _rst = "금요일";
+                break;
+            case 7:
+                _rst = "토요일";
+                break;
+            default:
+                _rst = "잘못 입력했습니다.";
+        }
+
+        document.write(_rst);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <style>
+            .hr-sect {
+                display: flex;
+                flex-basis: 100%;
+                align-items: center;
+                color: rgba(0, 0, 0, 0.35);
+                font-size: 12px;
+                margin: 8px 0px;
+            }
+            .hr-sect::before,
+            .hr-sect::after {
+                content: "";
+                flex-grow: 1;
+                background: rgba(0, 0, 0, 0.35);
+                height: 1px;
+                font-size: 0px;
+                line-height: 0px;
+                margin: 0px 16px;
+            }
+            #container{
+                border:1px solid #DBDBDB;
+                width:500px;
+                align:center;
+            }
+            .pack{
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <table align="center" class="pack">
+                <tr>
+                    <td >
+                        <img src="images/instagram_logo.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>친구들의 사진과 동영상을 보려면 가입하세요.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="Facebook으로 로그인">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="hr-sect">또는</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="휴대폰 번호 또는 이메일 주소">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="성명">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="사용자 이름">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" placeholder="비밀번호">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        저희 서비스를 이용하는 사람이 회원님의 연락처 정보를 Instagram에 업로드했을 수도 있습니다. 더 알아보기
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="가입">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table align="center" class="pack">
+                <tr>
+                    <td>
+                        계정이 있으신가요? 로그인
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table align="center" class="pack">
+                <tr>
+                    <td>
+                        앱을 다운로드하세요.
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

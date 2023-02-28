@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+        var n=parseInt(prompt("x좌표(정수)를 입력하세요"));
+        var m=parseInt(prompt("y좌표(정수)를 입력하세요"));
+
+        if(n>0 && m>0){
+            document.write("1사분면입니다.");
+        }
+        else if(n<0 && m >0){
+            document.write("2사분면입니다.");
+        }
+        else if(n<0 && m<0){
+            document.write("3사분면입니다.");
+        }
+        else if(n>0 && m<0){
+            document.write("4사분면입니다.");
+        }
+        else{
+            document.write("어디에도 속하지 않습니다.");
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+        var tmp = parseInt(prompt("숫자를 입력해주세요"));
+        var sum = 0;
+        var i;
+
+        for (i = 1; i <= tmp; i++) {
+            sum += i;
+        }
+
+        if (tmp > 0)
+            document.write("1부터 " + tmp + "까지 더하면 " + sum);
+        else
+            document.write("잘못된 숫자입니다.");
+    </script>
+</body>
+
+</html>

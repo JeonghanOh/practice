@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+        var n = parseInt(prompt("몇 분인지 입력하세요"));
+        var answer = 0;
+
+        if (n > 0) {
+            answer += 5000;
+            n -= 180;
+            if (n > 0) {
+                answer = answer + (500 * parseInt(n / 10));
+            }
+        }
+
+        document.write(answer);
+
+    </script>
+</body>
+
+</html>

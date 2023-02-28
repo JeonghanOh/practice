@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+        var n=parseInt(prompt("범위를 입력해주세요(0~x)"));
+        var flag=parseInt(prompt("1이면 홀수 2면 짝수"));
+        var i;
+
+        if(flag==1){
+            for(i=1;i<=n;i+=2){
+                document.write(i+",");
+            }
+        }
+        else if(flag==2){
+            for(i=2;i<=n;i+=2){
+                document.write(i+",");
+            }
+        }
+        else{
+            document.write("1 또는 2만 입력해주세요.");
+        }
+
+    </script>
+</body>
+
+</html>

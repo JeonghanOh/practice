@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>연습문제 1</title>
+	<style>
+		/* ul, li, label 에 스타일 적용 */
+		/* list-style:none 는 앞에 ●을 빼는 스타일 */
+		ul { list-style:none;}
+		/* li 태그 값의 높이를 지정 */
+		li { line-height:50px; }
+		/* label 태그의 기본 너비, 위치를 지정 */
+		label {
+			width:60px;
+			float:left;
+		}
+	</style>
+</head>
+<body>
+	<h1>예약 정보</h1>
+	<form>
+		<ul>
+			<li>
+				<!-- label과 input 타입은 하나로 묶어야 하기때문에 id와 for 속성을 사용 -->
+				<label for="r-name">이 름</label>
+				<input type="text" id="r-name">
+			</li>
+			<li>
+				<label for="r-phone">휴대폰</label>
+				<input type="tel" id="r-phone">
+			</li>
+			<li>
+				<label for="r-email">이메일</label>
+				<input type="email" id="r-email">
+			</li>
+			<li>
+				<input type="submit" value="예약하기">
+		</ul>
+	</form>
+</body>
+</html>

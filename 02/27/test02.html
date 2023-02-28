@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <button class="btn_test" value="1" onclick="GetBtnValue(this.value)">1</button>
+    <button class="btn_test" value="2" onclick="GetBtnValue(this.value)">2</button>
+    <button class="btn_test" value="3" onclick="GetBtnValue(this.value)">3</button>
+    <button class="btn_test" value="4" onclick="GetBtnValue(this.value)">4</button>
+    <button class="btn_test" value="5" onclick="GetBtnValue(this.value)">5</button>
+    <button class="btn_test" value="6" onclick="GetBtnValue(this.value)">6</button>
+    <button class="btn_test" value="7" onclick="GetBtnValue(this.value)">7</button>
+    <button class="btn_test" value="8" onclick="GetBtnValue(this.value)">8</button>
+    <button class="btn_test" value="9" onclick="GetBtnValue(this.value)">9</button>
+    <button class="btn_test" value="10" onclick="GetBtnValue(this.value)">10</button>
+    <button class="btn_test" value="11" onclick="GetBtnValue(this.value)">11</button>
+    <button class="btn_test" value="12" onclick="GetBtnValue(this.value)">12</button>
+
+    <p id="days"></p>
+
+    <script>
+        var days = document.getElementById("days");
+
+        function GetBtnValue(GetValue) {
+            switch (GetValue) {
+                case "1": days.innerText = "1월은 31일";
+                    break;
+                case "2": days.innerText = "2월은 28일";
+                    break;
+                case "3": days.innerText = "3월은 31일";
+                    break;
+                case "4": days.innerText = "4월은 30일";
+                    break;
+                case "5": days.innerText = "5월은 31일";
+                    break;
+                case "6": days.innerText = "6월은 30일";
+                    break;
+                case "7": days.innerText = "7월은 31일";
+                    break;
+                case "8": days.innerText = "8월은 31일";
+                    break;
+                case "9": days.innerText = "9월은 30일";
+                    break;
+                case "10": days.innerText = "10월은 31일";
+                    break;
+                case "11": days.innerText = "11월은 30일";
+                    break;
+                case "12": days.innerText = "12월은 31일";
+                    break;
+            }
+
+            console.log(GetValue);
+        }
+    </script>
+</body>
+
+</html>

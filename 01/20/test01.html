@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <style>
+            .p1{
+                width:200px;
+            }
+            p{
+                line-height: 0.5;
+            }
+            #container{
+                padding: 0px 0px 0px 0px;
+                margin: 0px 0px 0px 0px;
+                width:500px;
+            }
+            #pack{
+                border:none;
+                outline: none;
+                border-bottom: 1px solid black;
+                width:500px;
+            }
+            input[type="text"]{
+                border:none;
+                border-bottom: 1px solid black;
+                outline: none;
+            }
+            .check_word{
+                border:1px solid #DADADA;
+                width:400px;
+            }
+            .reload{
+                border:1px solid #DADADA;
+                width:50px;
+                text-align: center;
+            }
+            .volume{
+                border:1px solid #DADADA;
+                width:50px;
+                text-align: center;
+            }
+            .next{
+                width:500px;
+                height:50px;
+            }
+            .nate{
+                color:#FF2C2E;
+                text-align: center;
+                font-size:50px;
+            }
+            .phone{
+                width:390px;
+            }
+            .certnum{
+                width:420px;
+            }
+            .lett{
+                width:500px;
+            }
+            .vac{
+                width:700px;
+            }
+            #text1{
+                font-size:22px;
+
+            }
+            #sk{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <table align="center">
+            <tr>
+                <td>
+                    <div id="container">
+                        <h1 class="nate">nate</h1>
+                        <b id="text1">휴대폰 인증을 진행해 주세요.</b>
+                        <p>휴대폰 번호는 아이디/비밀번호 찾기에 사용됩니다.</p>
+                        <p>인증번호 받기 전 보안 문자를 입력해 주세요.</p>
+                        <br><br>
+                        <p>그림문자 또는 음성문자</p>
+                        <table>
+                            <tr>
+                                <td class="check_word">
+                                    <table>
+                                        <tr>
+                                            <td class="p1"></td>
+                                            <td><img src="images/check_word.png" ></td>
+                                            <td class="p1"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="reload"><img src="images/reload_btn.png" ></td>
+                                <td class="volume"><img src="images/volume_btn.png" ></td>
+                            </tr>
+                        </table>
+                        <input type="text" placeholder="그림문자 또는 음성문자 입력" class="lett">
+                        
+                        <p>휴대폰</p>
+                        <select id="pack">
+                            <option value="Korea(82)" selected>Korea(82)</option>
+                        </select>
+                        <br><br>
+                        <table>
+                            <tr>
+                                <td><input type="text" placeholder="-없이 숫자만 입력" class="phone"></td>
+                                <td><input type="button" value="인증번호 받기"></td>
+                            </tr>
+                        </table>
+                        
+                        <p>인증번호</p>
+                        <table>
+                            <tr>
+                                <td><input type="text" placeholder="인증번호(10분동안 유효)" class="certnum"></td>
+                                <td><input type="button" value="인증하기"></td>
+                            </tr>
+                        </table>
+                        
+                        <br><br>
+                        <input type="submit" value="다음" class ="next">
+            
+                    <br><br><br>
+                    <div id="sk">sk communications</div>
+                </div>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

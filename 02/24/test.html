@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset = "UTF-8">
+    <title>CSS Display</title>
+</head>
+
+<body onload="OnloadPage()">
+    <select id = "select_value" onchange = "ChangeValue()">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+    <div>
+        <p id="gugudanHead"></p>
+        <p id="_Data"></p>
+    </div>
+
+    <script>
+        var aa = document.getElementById("_Data");
+        var bb = document.getElementById("gugudanHead");
+        var _yy;
+
+        function OnloadPage(){
+            ChangeValue();
+        }
+
+        function ChangeValue(){
+            var _xx = document.getElementById("select_value");
+            _yy = _xx.options[_xx.selectedIndex].text;
+            fn();
+        }
+        
+        function fn(){
+            bb.innerText = _yy +"단";
+            aa.innerText="";
+            for(var i=1;i<=9;i++){
+                aa.innerText += _yy+"×"+i+"="+_yy*i;
+                aa.innerHTML += "<br>"
+            }
+        }
+
+    </script>
+</body>
+
+</html>

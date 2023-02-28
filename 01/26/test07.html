@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+        var i;
+        var array = new Array(10);
+        array.fill(0);
+
+        for (i = 0; i < 20; i++) {
+            var n = parseInt(prompt((i + 1) + "번째 입력"));
+
+            /*   if(n>0 && n<10){
+                   array[n]++;
+               }*/
+
+            switch (n) {
+                case 0:
+                    array[0]++;
+                    break;
+                case 1:
+                    array[1]++;
+                    break;
+                case 2:
+                    array[2]++;
+                    break;
+                case 3:
+                    array[3]++;
+                    break;
+                case 4:
+                    array[4]++;
+                    break;
+                case 5:
+                    array[5]++;
+                    break;
+                case 6:
+                    array[6]++;
+                    break;
+                case 7:
+                    array[7]++;
+                    break;
+                case 8:
+                    array[8]++;
+                    break;
+                case 9:
+                    array[9]++;
+                    break;
+                default:
+            }
+        }
+
+        var _tmp = "";
+        for (i = 0; i <= 9; i++) {
+            //  _tmp += "[" + i + ":" + array[i] + "]";
+            document.write("숫자 " + i + "는 " + array[i] + "번 중복 됐습니다.<br>");
+        }
+
+       // alert(_tmp);
+
+    </script>
+</body>
+
+</html>
