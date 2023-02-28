@@ -422,14 +422,14 @@
             var num = [];
             var numCnt = 0;
 
-            num[numCnt++] = parseInt(str.substr(0, pos[i]));
+            num[numCnt++] = parseFloat(str.substr(0, pos[i]));
 
             for (var i = 0; i < cnt; i++) {
                 if(i == cnt - 1){
-                    num[numCnt++] = parseInt(str.substr(pos[i] + 1));
+                    num[numCnt++] = parseFloat(str.substr(pos[i] + 1));
                 }
                 else{
-                    num[numCnt++] = parseInt(str.substr(pos[i] + 1, pos[i + 1] - pos[i] - 1));
+                    num[numCnt++] = parseFloat(str.substr(pos[i] + 1, pos[i + 1] - pos[i] - 1));
                 }
             }
 
@@ -479,6 +479,9 @@
                 }
             }
 
+            if(num[0] - parseInt(num[0]) >= -0.00000001 && num[0] - parseInt(num[0]) <= 0.00000001){
+                num[0] = parseInt(num[0]);
+            }
             zz.value = num[0];
         });
 
