@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        #container {
+            width: 200px;
+        }
+
+        #visible {
+            width: 200px;
+            height: 50px;
+            background-color: white;
+            float: left;
+        }
+
+        #AC {
+            width: 150px;
+            height: 50px;
+            float: left;
+        }
+
+        #divide {
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+
+        #seven {
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+
+        #eight {
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+
+        #nine {
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+
+        #multiply {
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+
+        #four {
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+
+        #five {
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+
+        #six {
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+
+        #minus {
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+
+        #one {
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+
+        #two {
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+
+        #three {
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+
+        #plus {
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+
+        #zero {
+            width: 100px;
+            height: 50px;
+            float: left;
+        }
+
+        #dot {
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+
+        #equal {
+            width: 50px;
+            height: 50px;
+            float: left;
+        }
+
+        #AC_btn {
+            width: 150px;
+            height: 50px;
+            background-color: gray;
+            color: white;
+        }
+
+        #seven_btn {
+            width: 50px;
+            height: 50px;
+            background-color: gray;
+            color: white;
+        }
+
+        #eight_btn {
+            width: 50px;
+            height: 50px;
+            background-color: gray;
+            color: white;
+        }
+
+        #nine_btn {
+            width: 50px;
+            height: 50px;
+            background-color: gray;
+            color: white;
+        }
+
+        #four_btn {
+            width: 50px;
+            height: 50px;
+            background-color: gray;
+            color: white;
+        }
+
+        #five_btn {
+            width: 50px;
+            height: 50px;
+            background-color: gray;
+            color: white;
+        }
+
+        #six_btn {
+            width: 50px;
+            height: 50px;
+            background-color: gray;
+            color: white;
+        }
+
+        #one_btn {
+            width: 50px;
+            height: 50px;
+            background-color: gray;
+            color: white;
+        }
+
+        #two_btn {
+            width: 50px;
+            height: 50px;
+            background-color: gray;
+            color: white;
+        }
+
+        #three_btn {
+            width: 50px;
+            height: 50px;
+            background-color: gray;
+            color: white;
+        }
+
+        #zero_btn {
+            width: 100px;
+            height: 50px;
+            background-color: gray;
+            color: white;
+        }
+
+        #divide_btn {
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+        }
+
+        #multiply_btn {
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+        }
+
+        #minus_btn {
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+        }
+
+        #plus_btn {
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+        }
+
+        #equal_btn {
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+        }
+
+        #dot_btn {
+            width: 50px;
+            height: 50px;
+            background-color: gray;
+            color: white;
+        }
+
+        input {
+            width: 192px;
+            height: 44px;
+            background-color: gray;
+            color: white;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="visible">
+            <input type="text" disabled>
+        </div>
+        <div id="AC">
+            <button id="AC_btn" type="button">
+                AC</button>
+        </div>
+        <div id="divide">
+            <button id="divide_btn" type="button">
+                ÷</button>
+        </div>
+
+        <div id="seven">
+            <button id="seven_btn" type="button">
+                7</button>
+        </div>
+        <div id="eight">
+            <button id="eight_btn" type="button">
+                8</button>
+        </div>
+
+        <div id="nine">
+            <button id="nine_btn" type="button">
+                9</button>
+        </div>
+        <div id="multiply">
+            <button id="multiply_btn" type="button">
+                ×</button>
+        </div>
+        <div id="four">
+            <button id="four_btn" type="button">
+                4</button>
+        </div>
+        <div id="five">
+            <button id="five_btn" type="button">
+                5</button>
+        </div>
+
+        <div id="six">
+            <button id="six_btn" type="button">
+                6</button>
+        </div>
+        <div id="minus">
+            <button id="minus_btn" type="button">
+                -</button>
+        </div>
+        <div id="one">
+            <button id="one_btn" type="button">
+                1</button>
+        </div>
+        <div id="two">
+            <button id="two_btn" type="button">
+                2</button>
+        </div>
+
+        <div id="three">
+            <button id="three_btn" type="button">
+                3</button>
+        </div>
+        <div id="plus">
+            <button id="plus_btn" type="button">
+                +</button>
+        </div>
+        <div id="zero">
+            <button id="zero_btn" type="button">
+                0</button>
+        </div>
+        <div id="dot">
+            <button id="dot_btn" type="button">
+                .</button>
+        </div>
+        <div id="equal">
+            <button id="equal_btn" type="button">
+                =</button>
+        </div>
+    </div>
+
+    <script>
+        var zz = document.querySelector('input');
+        var arr = [];
+        arr[0] = document.querySelector('#zero_btn');
+        arr[1] = document.querySelector('#one_btn');
+        arr[2] = document.querySelector('#two_btn');
+        arr[3] = document.querySelector('#three_btn');
+        arr[4] = document.querySelector('#four_btn');
+        arr[5] = document.querySelector('#five_btn');
+        arr[6] = document.querySelector('#six_btn');
+        arr[7] = document.querySelector('#seven_btn');
+        arr[8] = document.querySelector('#eight_btn');
+        arr[9] = document.querySelector('#nine_btn');
+        arr[10] = document.querySelector('#dot_btn');
+        arr[11] = document.querySelector('#equal_btn');
+        arr[12] = document.querySelector('#plus_btn');
+        arr[13] = document.querySelector('#minus_btn');
+        arr[14] = document.querySelector('#multiply_btn');
+        arr[15] = document.querySelector('#divide_btn');
+        arr[16] = document.querySelector('#AC_btn');
+
+        var op = ['+', '-', '÷', '×'];
+
+        arr[0].addEventListener('click', function () {  // 0
+            zz.value += arr[0].innerText;
+        });
+
+        arr[1].addEventListener('click', function () {  // 1
+            zz.value += arr[1].innerText;
+        });
+
+        arr[2].addEventListener('click', function () {  // 2
+            zz.value += arr[2].innerText;
+        });
+
+        arr[3].addEventListener('click', function () {  // 3
+            zz.value += arr[3].innerText;
+        });
+
+        arr[4].addEventListener('click', function () {  // 4
+            zz.value += arr[4].innerText;
+        });
+
+        arr[5].addEventListener('click', function () {  // 5
+            zz.value += arr[5].innerText;
+        });
+
+        arr[6].addEventListener('click', function () {  // 6
+            zz.value += arr[6].innerText;
+        });
+
+        arr[7].addEventListener('click', function () {  // 7
+            zz.value += arr[7].innerText;
+        });
+
+        arr[8].addEventListener('click', function () {  // 8
+            zz.value += arr[8].innerText;
+        });
+
+        arr[9].addEventListener('click', function () {  // 9
+            zz.value += arr[9].innerText;
+        });
+
+        arr[10].addEventListener('click', function () { // .
+            if (zz.value.length == 0) {
+                return;
+            }
+
+            zz.value += arr[10].innerText;
+        });
+
+        arr[11].addEventListener('click', function () { // =
+            var str = zz.value;
+
+            var pos = [-1];
+            var cnt = 0;
+
+            // input요소에서 연산자를 찾아 인덱스를 pos에 저장한다.
+            for (var i = 0; i < str.length; i++) {
+                if (str.charAt(i) == '+') {
+                    pos[cnt++] = i;
+                }
+                else if (str.charAt(i) == '-') {
+                    pos[cnt++] = i;
+                }
+                else if (str.charAt(i) == '÷') {
+                    pos[cnt++] = i;
+                }
+                else if (str.charAt(i) == '×') {
+                    pos[cnt++] = i;
+                }
+            }
+
+            // 연산자가 없으면 리턴한다.
+            if (pos[0] == -1) {
+                return;
+            }
+
+            // 숫자를 파싱한다.
+            var num = [];
+            var numCnt = 0;
+
+            num[numCnt++] = parseInt(str.substr(0, pos[i]));
+
+            for (var i = 0; i < cnt; i++) {
+                if(i == cnt - 1){
+                    num[numCnt++] = parseInt(str.substr(pos[i] + 1));
+                }
+                else{
+                    num[numCnt++] = parseInt(str.substr(pos[i] + 1, pos[i + 1] - pos[i] - 1));
+                }
+            }
+
+            // 파싱한 숫자와 연산자들로 값을 계산한다.
+            // 우선 곱하기, 나누기를 연산한다.
+            for (var i = 0; i < pos.length; i++) {
+                if(str.charAt(pos[i])=='×'){
+                    num[i] = num[i]*num[i+1];
+                    // 연산한 숫자를 없애준다.
+                    num.splice(i+1,1);
+                    // 연산에 쓰인 연산자를 없애준다.
+                    pos.splice(i,1);
+                    // 없어진 숫자만큼 i를 정체시켜준다.
+                    i--;
+                }
+                else if(str.charAt(pos[i]) == '÷'){
+                    num[i] = num[i]/num[i+1];
+                    // 연산한 숫자를 없애준다.
+                    num.splice(i+1,1);
+                    // 연산에 쓰인 연산자를 없애준다.
+                    pos.splice(i,1);
+                    // 없어진 숫자만큼 i를 정체시켜준다.
+                    i--;
+                }
+            }
+
+            // 파싱한 숫자와 찾은 연산자들로 값을 계산한다.
+            // 더하기, 마이너스를 연산한다.
+            for (var i = 0; i < pos.length; i++) {
+                if(str.charAt(pos[i])=='+'){
+                    num[i] = num[i]+num[i+1];
+                    // 연산한 숫자를 없애준다.
+                    num.splice(i+1,1);
+                    // 연산에 쓰인 연산자를 없애준다.
+                    pos.splice(i,1);
+                    // 없어진 숫자만큼 i를 정체시켜준다.
+                    i--;
+                }
+                else if(str.charAt(pos[i]) == '-'){
+                    num[i] = num[i]-num[i+1];
+                    // 연산한 숫자를 없애준다.
+                    num.splice(i+1,1);
+                    // 연산에 쓰인 연산자를 없애준다.
+                    pos.splice(i,1);
+                    // 없어진 숫자만큼 i를 정체시켜준다.
+                    i--;
+                }
+            }
+
+            zz.value = num[0];
+        });
+
+        arr[12].addEventListener('click', function () { // +
+            // input 요쇼가 빈 값이라면 함수를 종료한다.
+            if (zz.value.length == 0) {
+                return;
+            }
+
+            // 직전에 연산자가 있으면 함수를 종료시킨다.
+            for (var i = 0; i < 4; i++) {
+                if (zz.value.charAt(zz.value.length - 1) == op[i]) {
+                    return;
+                }
+            }
+            zz.value += arr[12].innerText;
+        });
+
+        arr[13].addEventListener('click', function () { // -
+            // input 요쇼가 빈 값이라면 함수를 종료한다.
+            if (zz.value.length == 0) {
+                return;
+            }
+
+            // 직전에 연산자가 있으면 함수를 종료시킨다.
+            for (var i = 0; i < 4; i++) {
+                if (zz.value.charAt(zz.value.length - 1) == op[i]) {
+                    return;
+                }
+            }
+            zz.value += arr[13].innerText;
+        });
+
+        arr[14].addEventListener('click', function () { // ×
+            // input 요쇼가 빈 값이라면 함수를 종료한다.
+            if (zz.value.length == 0) {
+                return;
+            }
+
+            // 직전에 연산자가 있으면 함수를 종료시킨다.
+            for (var i = 0; i < 4; i++) {
+                if (zz.value.charAt(zz.value.length - 1) == op[i]) {
+                    return;
+                }
+            }
+
+            zz.value += arr[14].innerText;
+        });
+
+        arr[15].addEventListener('click', function () { // ÷
+            // input 요쇼가 빈 값이라면 함수를 종료한다.
+            if (zz.value.length == 0) {
+                return;
+            }
+
+            // 직전에 연산자가 있으면 함수를 종료시킨다.
+            for (var i = 0; i < 4; i++) {
+                if (zz.value.charAt(zz.value.length - 1) == op[i]) {
+                    return;
+                }
+            }
+
+            zz.value += arr[15].innerText;
+        });
+
+        arr[16].addEventListener('click', function () { // AC
+            zz.value = "";
+        });
+
+    </script>
+</body>
+
+</html>
