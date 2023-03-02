@@ -1,0 +1,234 @@
+#container {
+    width: 200px;
+}
+
+#visible {
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    float: left;
+}
+
+#AC {
+    width: 150px;
+    height: 50px;
+    float: left;
+}
+
+#divide {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+#seven {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+#eight {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+#nine {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+#multiply {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+#four {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+#five {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+#six {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+#minus {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+#one {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+#two {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+#three {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+#plus {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+#zero {
+    width: 100px;
+    height: 50px;
+    float: left;
+}
+
+#dot {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+#equal {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+#AC_btn {
+    width: 150px;
+    height: 50px;
+    background-color: gray;
+    color: white;
+}
+
+#seven_btn {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    color: white;
+}
+
+#eight_btn {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    color: white;
+}
+
+#nine_btn {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    color: white;
+}
+
+#four_btn {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    color: white;
+}
+
+#five_btn {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    color: white;
+}
+
+#six_btn {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    color: white;
+}
+
+#one_btn {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    color: white;
+}
+
+#two_btn {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    color: white;
+}
+
+#three_btn {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    color: white;
+}
+
+#zero_btn {
+    width: 100px;
+    height: 50px;
+    background-color: gray;
+    color: white;
+}
+
+#divide_btn {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+}
+
+#multiply_btn {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+}
+
+#minus_btn {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+}
+
+#plus_btn {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+}
+
+#equal_btn {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+}
+
+#dot_btn {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    color: white;
+}
+
+input {
+    width: 192px;
+    height: 44px;
+    background-color: gray;
+    color: white;
+    text-align: right;
+}
