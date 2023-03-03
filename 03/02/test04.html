@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Etc Traversing</title>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script>
+		$(function() {
+			$("button").on("click", function() {
+				$("iframe")			// <iframe>요소의
+					.contents()		// 자식 요소를 모두 선택한 후,
+					.find("a")		// 그 중에서 <a>요소를 모두 선택하고,
+					.css("backgroundColor", "aqua");	// 선택된 모든 <a>요소의 CSS 스타일을 설정함.
+			});
+		});
+	</script>
+</head>
+
+<body>
+
+	<h1>.contents() 메소드</h1>
+	<button>a 요소의 배경색 변경!</button><br><br>
+	<iframe src="/css/intro" style="width:95%; height:400px;"></iframe>
+	
+</body>
+
+</html>
