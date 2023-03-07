@@ -75,11 +75,14 @@ li {
 }
 
 #subMenu{
+    display: none;
+    border-top : 1px solid black;
     position: absolute;
     font-size: 0.75em;
+    font-weight: 900;
     padding-top: -12px;
     margin-top: -12px;
-    top: 103px;
+    top: 102px;
     margin-left:360px;
     width: 727px;
     height: 130px;
@@ -91,40 +94,104 @@ li {
 
 #sub1{
     width:120px;
+    height: 130px;
+    line-height: 30px;
     border-left: 1px solid #E6E6E6;
     border-right: 1px solid #E6E6E6;
     float: left;
 }
 
+#sub1 a{
+    color: #555555;
+}
+
+#sub1 a{
+    color: #555555;
+}
+#sub1 a:hover{
+    color: #5B61AB;
+}
+
 #sub2{
     width:120px;
+    height: 130px;
+    line-height: 30px;
+    color: #555555;
     border-right: 1px solid #E6E6E6;
     float: left;
+}
+
+#sub2 a{
+    color: #555555;
+}
+#sub2 a:hover{
+    color: #5B61AB;
 }
 
 #sub3{
     width:120px;
+    height: 130px;
+    line-height: 30px;
+    color: #555555;
     border-right: 1px solid #E6E6E6;
     float: left;
+}
+
+#sub3 a{
+    color: #555555;
+}
+#sub3 a:hover{
+    color: #5B61AB;
 }
 
 #sub4{
     width:120px;
+    height: 130px;
+    line-height: 30px;
+    color: #555555;
     border-right: 1px solid #E6E6E6;
     float: left;
+}
+
+#sub4 a{
+    color: #555555;
+}
+#sub4 a:hover{
+    color: #5B61AB;
 }
 
 #sub5{
     width:120px;
+    height: 130px;
+    line-height: 30px;
+    color: #555555;
     border-right: 1px solid #E6E6E6;
     float: left;
 }
 
+#sub5 a{
+    color: #555555;
+}
+#sub5 a:hover{
+    color: #5B61AB;
+}
+
 #sub6{
     width:120px;
+    height: 130px;
+    line-height: 30px;
+    color: #555555;
     border-right: 1px solid #E6E6E6;
     float: left;
 }
+
+#sub6 a{
+    color: #555555;
+}
+#sub6 a:hover{
+    color: #5B61AB;
+}
+
 
 #logo {
 }
@@ -226,6 +293,10 @@ li {
     line-height: 25px;
 }
 
+#toptop{
+    height:10px;
+}
+
 #top1 {
     float: left;
     border: 1px solid white;
@@ -235,6 +306,8 @@ li {
 #top2 {
     font-size: 0.75em;
     width: 120px;
+    height: 20px;
+    line-height: 20px;
     text-align: center;
     float: left;
 }
@@ -243,6 +316,8 @@ li {
     font-size: 0.75em;
     border-left: 1px solid #E6E6E6; 
     width: 80px;
+    height: 20px;
+    line-height: 20px;
     text-align: center;
     float: left;
 }
@@ -250,6 +325,8 @@ li {
 #top4 {
     font-size: 0.75em;
     width: 80px;
+    height: 20px;
+    line-height: 20px;
     border-left: 1px solid #E6E6E6; 
     text-align: center;
     float: left;
@@ -258,9 +335,16 @@ li {
 #top5 {
     font-size: 0.75em;
     width: 80px;
+    height: 20px;
+    line-height: 20px;
     border-left: 1px solid #E6E6E6; 
     text-align: center;
     float: left;
+}
+
+#top5 a{
+    font-weight: 900;
+    color:#3D449C;
 }
 
 #main_banner2{
@@ -581,6 +665,7 @@ li {
 }
 
 .cls1{
+    color: #77778D;
     width: 150px;
     padding-left: 32px;
     line-height: 60px;
@@ -636,14 +721,14 @@ a{
     padding-top: 40px;
     padding-left: 330px;
     float: left;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #visit{
     width: 700px;
     height: 100px;
     line-height: 100px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     float: left;
 }
 
@@ -652,15 +737,16 @@ a{
     height: 180px;
     float: left;
     font-size:0.7em;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #opentalk{
-    margin-top: -100px;
+    margin-top: -240px;
+    margin-left: -50px;
     width: 800px;
     height: 250px;
     float : right;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #openImg{

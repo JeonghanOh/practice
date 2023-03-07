@@ -1,14 +1,11 @@
 $(document).ready(function(){
 
-	$('#subMenu').hide();
-
 	$('#navForSub').mouseover(function(){
-		$('#subMenu').slideDown(1);
-
+		$('#subMenu').css("display","block");
 	});
 
 	$('#navForSub').mouseleave(function(){
-		$('#subMenu').hide();
+		$('#subMenu').css("display","none");
 
 	});
 });
