@@ -10,7 +10,7 @@
     <div id="header">
         <div id="head0">
             <form id="combo">
-                <select name="language">
+                <select id="selectCombo" name="language">
                     <option value="korean" selected>한국어</option>
                     <option value="english">English</option>
                     <option value="chinese">中文(简体)</option>
@@ -36,16 +36,30 @@
         </div>
 
         <div id="center">
-            <label><input type="checkbox" id="chk1" onclick="selectAll()"><b>네이버 이용약관, 개인정보 수집 및 이용, 위치기반서비스 이용약관(선택),
-                    프로모션 정보
-                    수신(선택)에 모두 동의합니다.</b></label>
+            <table>
+                <tr>
+                    <td><img src="checkOff.png" id="chk1" onclick="selectAll()"></td>
+                    <td><label style = "text-decoration: underline; font-size:0.97em"><b>네이버 이용약관, 개인정보 수집 및 이용, 위치기반서비스 이용약관(선택),
+                        프로모션 정보
+                        수신(선택)에 모두 동의합니다.</b></label></td>
+                </tr>
+            </table>
+            
             <br>
             <br>
-            <br>
-            <label><input type="checkbox" id="chk2" name="clause" onclick="fnForChk1(this)" required><b>네이버 이용약관
-                    동의(필수)</b></label>
+            <table>
+                <tr>
+                    <td>
+                        <img src="checkOff.png" id="chk2" name="clause" onclick="fnForChk1(this)" required>
+                    </td>
+                    <td>
+                        <label><b>네이버 이용약관
+                                동의</b><span style = "color:#08A600">(필수)</span></label>
+                    </td>
+                </tr>
+            </table>
 
-            <textarea id="ta1" cols="65" rows="5" disabled>
+            <textarea id="ta1" cols="65" rows="5" style="resize: none; background-color:white" disabled>
  여러분을 환영합니다.
 네이버 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 네이버 서비스의 이용과 관련하여 네이버 서비스를 제공하는 네이버 주식회사(이하 ‘네이버’)와 이를 이용하는 네이버 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며, 아울러 여러분의 네이버 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.
 
@@ -167,10 +181,26 @@
             </textarea>
             <br>
             <br>
-            <label><input type="checkbox" id="chk3" name="clause" onclick="fnForChk1(this)" required><b>개인정보 수집 및 이용
-                    동의(필수)</b></label>
 
-            <textarea id="ta1" cols="65" rows="5" disabled>
+            <table>
+                <tr>
+                    <td>
+                        <img src="checkOff.png" id="chk3" name="clause" onclick="fnForChk1(this)" required>
+                    </td>
+                    <td width="380px">
+                        <label><b>개인정보 수집 및 이용
+                            동의</b><span style = "color:#08A600">(필수)</span></label>
+                    </td>
+                    <td width="100px">
+                        
+                    </td>
+                    <td>
+                        <input type="button" id="childInfo" value="어린이용 안내">
+                    </td>
+                </tr>
+            </table>
+
+            <textarea id="ta1" cols="65" rows="5" style="resize: none; background-color:white" disabled>
  개인정보보호법에 따라 네이버에 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간, 동의 거부권 및 동의 거부 시 불이익에 관한 사항을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.
 
 1. 수집하는 개인정보
@@ -238,9 +268,20 @@ eXpert 서비스 및 eXpert 센터 가입 등록정보 : 신청일로부터 6개
 
             <br>
             <br>
-            <label><input type="checkbox" id="chk4" name="clause" onclick="fnForChk1(this)"><b>위치기반서비스 이용약관
-                    동의(선택)</b></label>
-            <textarea id="ta1" cols="65" rows="5" disabled>
+
+            <table>
+                <tr>
+                    <td>
+                        <img src="checkOff.png" id="chk4" name="clause" onclick="fnForChk1(this)">
+                    </td>
+                    <td>
+                        <label><b>위치기반서비스 이용약관
+                            동의</b><span style = "color:#8E8E8E">(선택)</span></label>
+                    </td>
+                </tr>
+            </table>
+
+            <textarea id="ta1" cols="65" rows="5" style="resize: none; background-color:white" disabled>
  위치기반서비스 이용약관에 동의하시면, 위치를 활용한 광고 정보 수신 등을 포함하는 네이버 위치기반 서비스를 이용할 수 있습니다.
 
 제 1 조 (목적)
@@ -317,14 +358,26 @@ eXpert 서비스 및 eXpert 센터 가입 등록정보 : 신청일로부터 6개
 
             <br>
             <br>
-            <label><input type="checkbox" id="chk5" name="clause" onclick="fnForChk1(this)"><b>프로모션 정보 수신
-                    동의(선택)</b></label>
+
+            <table>
+                <tr>
+                    <td>
+                        <img src="checkOff.png" id="chk5" name="clause" onclick="fnForChk1(this)">
+                    </td>
+                    <td>
+                        <label><b>프로모션 정보 수신
+                            동의</b><span style = "color:#8E8E8E">(선택)</span></label>
+                    </td>
+                </tr>
+            </table>
+
+            
             <p id="promotion">네이버에서 제공하는 이벤트/혜택 등 다양한 정보를 휴대전화(네이버앱 알림 또는 문자), 이메일로 받아보실 수 있습니다. 일부 서비스(별도 회원 체계로 운영하거나 네이버 가입 이후 추가
                 가입하여 이용하는 서비스 등)의 경우, 개별 서비스에 대해 별도 수신 동의를 받을 수 있으며, 이때에도 수신 동의에 대해 별도로 안내하고 동의를 받습니다.</p>
 
             <br>
             <input type="button" id="cancelBtn" value="취소">
-            <input type="button" id="confirmBtn" value="확인">
+            <input type="button" id="confirmBtn" onClick="next()" value="확인">
 
         </div>
 

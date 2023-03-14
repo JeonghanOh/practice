@@ -1,0 +1,220 @@
+* {
+    background-color: #F5F6F7;
+}
+
+#container {
+    /* border:1px solid black; */
+    background-color: #F5F6F7;
+    width: 100%;
+    height: 970px;
+    display: grid;
+    place-items: center;
+    height: 1%; overflow: hidden;
+}
+
+#center {
+    /* background-color: blue; */
+    width: min(500px, 100%);
+    background-color: #F5F6F7;
+    word-break: break-all;
+    place-items: center;
+}
+
+.cen{
+    border: 1px solid #DADADA;
+    background-color: white;
+    height: 50px;
+}
+
+.textbox{
+    border: 0px solid;
+    border-bottom: 1px solid #DADADA;
+    height: 48px;
+    padding-left: 20px;
+    width: 360px;
+    background-color: white;
+}
+
+#textbox2:focus{
+    outline:none;
+}
+
+.textbox:focus{
+    outline:none;
+}
+
+#textbox6{
+    border: 1px solid #DADADA;
+    height: 50px;
+    padding-left: 20px;
+    width: 143px;
+    background-color: white;
+    float :left;
+}
+
+#textbox6_2{
+    border: 1px solid #DADADA;
+    margin-left: 10px;
+    padding-left: 20px;
+    width: 143px;
+    height: 50px;
+    background-color: white;
+}
+
+#textbox6:focus{
+    outline:none;
+}
+
+#textbox6_2:focus{
+    outline:none;
+}
+
+#textbox10{
+    border: 1px solid #DADADA;
+    padding-left: 20px;
+    width: 358px;
+    margin-right: 8px;
+    height: 50px;
+    float: left;
+}
+
+#textbox10:focus{
+    outline:none;
+}
+
+#selectBox{
+    border: 1px solid #DADADA;
+    margin-left: 10px;
+    padding-left: 10px;
+    width: 145px;
+    height: 54px;
+    float :left;
+}
+
+#selectBox:focus{
+    outline: 1px solid #03C75A;
+}
+
+.selectBox2{
+    border: 0px solid #DADADA;
+    border-bottom: 1px solid #DADADA;
+    border-right: 1px solid #DADADA;
+    width: 500px;
+    height: 54px;
+    padding-left: 10px;
+}
+
+.selectBox2:focus{
+    outline: 1px solid #03C75A;
+}
+
+#cen5{
+    background-color: F5F6F7;
+    height: 54px;
+}
+
+#cen8{
+    margin-bottom: 10px;
+}
+
+#cen9{
+    background-color: white;
+    margin-bottom: 10px;
+    height: 54px;
+}
+
+#sendNum{
+    margin-left: 2px;
+    width: 108px;
+    background-color: #03C75A;
+    color: white;
+    float: left;
+    height: 54px;
+    text-align: center;
+    line-height: 54px;
+}
+
+#sendNum:hover{
+    cursor: pointer;
+}
+
+#cen10{
+    margin-bottom: 0px;
+    clear:both;
+}
+
+#buttonGaib{
+    margin-top: 27px;
+    background-color: #03C75A;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+}
+
+#buttonGaib:hover{
+    cursor: pointer;
+}
+
+#textbox2{
+    border: 0px solid;
+    border-bottom: 1px solid #DADADA;
+    width: 85px;
+    height: 48px;
+    color: #8E8E8E;
+    background-color: white;
+    float:right;
+}
+
+#lock1Img{
+    position:relative;
+    float: right;
+    top: 13px;
+    left: -20px;
+}
+
+#lock2Img{
+    position:relative;
+    float: right;
+    top: 13px;
+    left: -20px;
+}
+
+#header {
+    background-color: #F5F6F7;
+    width: 100%;
+    height: 150px;
+    display: grid;
+    place-items: center;
+}
+
+#head1 {
+    background-color: #F5F6F7;
+    width: min(500px, 100%);
+    height: 60px;
+    line-height: 90px;
+    word-break: break-all;
+    text-align: center;
+}
+
+#footer {
+    background-color: #F5F6F7;
+    width: 100%;
+    height: 100px;
+    display: grid;
+    place-items: center;
+}
+
+#foot1{
+    font-size: 0.8em;
+    height: 30px;
+    word-break: break-all;
+    text-align: center;
+}
+
+#foot2{
+    height: 40px;
+    text-align: center;
+    font-size: 0.8em;
+}
