@@ -13,40 +13,40 @@ function OnBlur(id, id2) {
     }
     else { //텍스트박스에 값이 들어있는 경우
         if (id2 == 'textbox1') { // 아이디를 입력받는 텍스트박스인 경우
-            textbox1();
+            input_id();
         }
         else if (id2 == 'sb1') { // 성별을 선택받는 셀렉트박스일 때
-            sb1();
+            input_gender();
         }
         else if (id2 == 'textbox10') { // 전화번호를 입력받는 텍스트박스인 경우
-            textbox10();
+            input_phone();
         }
         else if (id2 == 'textbox11') { // 인증번호를 입력받는 텍스트박스인 경우
-            textbox11();
+            input_certiNum();
         }
         else if (id2 == 'textbox5') {  // 이름을 입력받는 텍스트박스인 경우
-            textbox5();
+            input_name();
         }
         else if (id2 == 'textbox6') { // 생년을 입력받는 텍스트박스인 경우
-            birthday();
+            input_birthday();
         }
         else if (id2 == 'textbox6_2') { // 일을 입력받는 텍스트박스인 경우
-            birthday();
+            input_birthday();
         }
         else if (id2 == 'selectBox') { // 월을 입력받는 텍스트박스인 경우
-            birthday();
+            input_birthday();
         }
     }
 }
 
-
-function birthday() {
+// 생년월일 입력란+셀렉트박스
+function input_birthday() {
     var doc = document.getElementById('pilsu5');
 
     var reg = /^[0-9]+$/;
     var years = document.getElementById('textbox6');
-    var date = document.getElementById('textbox6_2');
     var months = document.getElementById('selectBox');
+    var date = document.getElementById('textbox6_2');
     var x = -1, y = -1, z = -1;
 
     var dt = new Date();
@@ -54,7 +54,7 @@ function birthday() {
 
     // 입력받은 일과 정규식이 매칭하는지 체크한다.
     if (date.value.match(reg)) {
-        var z = parseInt(date.value);
+        z = parseInt(date.value);
         dt.setDate(z);
     }
     else {
@@ -64,7 +64,7 @@ function birthday() {
 
     // 입력받은 월과 정규식이 매칭하는지 체크한다.
     if (months.value.match(reg)) {
-        var y = parseInt(months.value) - 1;
+        y = parseInt(months.value) - 1;
         dt.setMonth(y);
     }
     else {
@@ -90,8 +90,8 @@ function birthday() {
     }
 }
 
-// 이름
-function textbox5() {
+// 이름 입력란
+function input_name() {
     var doc = document.getElementById('pilsu4');
     var doc2 = document.getElementById('textbox5');
 
@@ -102,7 +102,9 @@ function textbox5() {
         doc.innerHTML = "";
     }
 }
-function textbox11() {
+
+// 인증번호 입력란
+function input_certiNum() {
     var doc = document.getElementById('pilsu6');
     var doc2 = document.getElementById('textbox11');
 
@@ -112,7 +114,8 @@ function textbox11() {
     }
 }
 
-function textbox10() {
+// 휴대폰 입력란
+function input_phone() {
     var doc = document.getElementById('pilsu6');
     var doc2 = document.getElementById('textbox10');
 
@@ -124,7 +127,8 @@ function textbox10() {
     }
 }
 
-function sb1() {
+// 성별 셀렉트박스
+function input_gender() {
     var doc = document.getElementById('pilsu7');
     var doc2 = document.getElementById('sb1');
 
@@ -138,7 +142,8 @@ function sb1() {
     }
 }
 
-function textbox1() {
+// 아이디 입력란
+function input_id() {
     var doc = document.getElementById('pilsu');
     var doc2 = document.getElementById('textbox1');
 
@@ -170,7 +175,7 @@ function chkPassword() {
     }
     else {
         var doc3 = document.getElementById('lock1Img');
-        doc3.src = "/03/07/lock2_2.png"
+        doc3.src = "/03/07/lock2_1.png"
 
         var doc2 = document.getElementById('pilsu2');
         doc2.innerHTML = "";
@@ -201,6 +206,14 @@ function equalsPassword() {
 
 // 인증번호 받기 버튼을 눌렀을 때
 function certiNumber() {
+    input_phone();
+    // 전화번호 입력이 비정상적이라면
+    if(chk[6] != 1){
+        alert("전화번호를 입력해주세요.");
+        return;
+    }
+
+    // 인증번호를 알려준다.
     alert("123456");
 
     var doc = document.getElementById('textbox11');
@@ -210,23 +223,27 @@ function certiNumber() {
 
 // 가입하기 버튼을 눌렀을 때
 function gaibhagi() {
+    // 다음 함수들은 chk배열을 업데이트 하기 위해 실행한다
     equalsPassword();
     chkPassword();
-    textbox1();
-    sb1();
-    textbox5();
-    birthday();
-    textbox11();
-    textbox10();
+    input_birthday();
+    input_name();
+    input_certiNum();
+    input_phone();
+    input_id();
+    input_gender();
 
+    // chk[i] != 1인 경우 입력이 비정상인 경우다.
     for (var i = 0; i < 8; i++) {
         if (chk[i] != 1) {
             alert("입력을 하지 않은 항목이 있습니다.");
             return;
         }
     }
-    location.href = 'test04.html';
+    // 모든 입력이 정상적으로 완료되었다면 test03로 넘어간다.
+    location.href = 'test03.html';
 
+    // chk를 초기화 해준다.
     for (var i = 0; i < 8; i++) {
         chk[i] = 0;
     }
