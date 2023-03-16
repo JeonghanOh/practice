@@ -37,7 +37,7 @@ function OnBlur(id, id2) {
         else if (id2 == 'selectBox') { // 월을 입력받는 텍스트박스인 경우
             input_birthday();
         }
-        else if(id2 == 'textbox8'){
+        else if(id2 == 'textbox8'){ // 이메일을 입력받는 텍스트박스인 경우
             input_email();
         }
     }
