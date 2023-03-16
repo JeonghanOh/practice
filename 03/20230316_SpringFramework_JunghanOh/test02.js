@@ -237,6 +237,10 @@ function equalsPassword() {
         var doc3 = document.getElementById('pilsu3');
         doc3.innerHTML = "비밀번호가 일치하지 않습니다."
         doc3.style = "color:red";
+
+        // 자물쇠 표시를 바꿔준다.
+        var doc4 = document.getElementById('lock2Img');
+        doc4.src = "lock1_2.png"
     }
 }
 
