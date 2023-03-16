@@ -8,7 +8,7 @@ function OnBlur(id, id2) {
 
 
     //텍스트박스에 빈칸인 경우
-    if (doc2.value == "" && id2 != 'textbox6' && id2 != 'textbox6_2' && id2 != 'selectBox') {
+    if (doc2.value == "" && id2 != 'textbox6' && id2 != 'textbox6_2' && id2 != 'selectBox' && id2 != 'textbox8') {
         doc.innerHTML = "필수 정보입니다.";
         doc.style = "color:red";
     }
