@@ -256,6 +256,7 @@ function certiNumber() {
     doc.disabled = false;
 }
 
+// 이메일 입력란
 function input_email(){
     // 경고창을 띄우기 위한 doc
     var doc = document.getElementById('pilsu8');
