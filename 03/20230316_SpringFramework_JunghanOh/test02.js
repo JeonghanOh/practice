@@ -7,7 +7,7 @@ function OnBlur(id, id2) {
     var doc2 = document.getElementById(id2);
 
 
-    //텍스트박스에 빈칸인 경우
+    //(텍스트박스에 빈칸인 경우) && (생년월일 입력란과 이메일입력란이 아닌 경우)
     if (doc2.value == "" && id2 != 'textbox6' && id2 != 'textbox6_2' && id2 != 'selectBox' && id2 != 'textbox8') {
         doc.innerHTML = "필수 정보입니다.";
         doc.style = "color:red";
