@@ -1,3 +1,4 @@
+// 가입 필수항목 여러개가 제대로 작성되어있다면 각각 1을 넣어주고 아니면 null 혹은 0을 넣어준다.
 var chk = [];
 
 // 포커스가 해제 되었을 때 실행하는 함수
@@ -35,6 +36,9 @@ function OnBlur(id, id2) {
         }
         else if (id2 == 'selectBox') { // 월을 입력받는 텍스트박스인 경우
             input_birthday();
+        }
+        else if(id2 == 'textbox8'){
+            input_email();
         }
     }
 }
@@ -250,6 +254,26 @@ function certiNumber() {
 
     // 인증번호를 알게된 경우 텍스트박스를 활성화 시켜준다.
     doc.disabled = false;
+}
+
+function input_email(){
+    // 경고창을 띄우기 위한 doc
+    var doc = document.getElementById('pilsu8');
+    // 텍스트박스의 doc2
+    var doc2 = document.getElementById('textbox8');
+
+    var regExp = /[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]$/i;
+
+    // 이메일이 올바르다면
+    if(doc2.value.match(regExp)){
+        // 경고창을 비워준다.
+        doc.innerHTML="";
+    }
+    else{
+        // 경고창
+        doc.innerHTML="이메일 주소를 다시 확인해주세요.";
+        doc.style="color:red";
+    }
 }
 
 // 가입하기 버튼을 눌렀을 때
