@@ -3,7 +3,9 @@ var chk = [];
 
 // 포커스가 해제 되었을 때 실행하는 함수
 function OnBlur(id, id2) {
+    // 경고창
     var doc = document.getElementById(id);
+    // 텍스트박스 혹은 셀렉트박스
     var doc2 = document.getElementById(id2);
 
 
