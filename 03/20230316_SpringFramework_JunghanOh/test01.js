@@ -9,18 +9,27 @@ function selectAll() {
 
     // str에 1번째 체크박스 이미지의 경로를 저장한다.
     var str = chk1.src;
+    const arr1 = str.split("/");
+
+    if (arr1[arr1.length - 1] == "checkOff.png") {
+        chk1.src = "images/checkOn.png";
+    }
+    else{
+        chk1.src = "images/checkOff.png";
+    }
+    
+    str = chk1.src;
+    const arr2 = str.split("/");
 
     // 2번째~5번째까지의 체크박스를 순회한다.
     checkboxes.forEach((checkbox) => {
         // 1번째 체크박스가 체크되어 있다면 전체 체크박스를 활성화 시킨다.
-        if (str != "http://127.0.0.1:5500/03/20230316_SpringFramework_JunghanOh/checkOn.png") {
-            chk1.src = "checkOn.png";
-            checkbox.src = "checkOn.png";
+        if (arr2[arr2.length - 1] == "checkOn.png") {
+            checkbox.src = "images/checkOn.png";
         }
         // 1번째 체크박스가 체크되지 않았다면 전체 체크박스를 비활성화 시킨다.
         else {
-            chk1.src = "checkOff.png";
-            checkbox.src = "checkOff.png";
+            checkbox.src = "images/checkOff.png";
         }
     })
 }
@@ -33,14 +42,17 @@ function fnForChk1(select) {
     // 1번째 체크박스의 document
     var chk1 = document.getElementById('chk1');
 
+    var str = select.src;
+    const arr = str.split("/");
+
     // 클릭을 했기 때문에 해당 체크박스의 이미지 경로가 체크 비활성화 인 경우에는 체크처리 해준다.
-    if (select.src == "http://127.0.0.1:5500/03/20230316_SpringFramework_JunghanOh/checkOff.png") {
-        select.src = "checkOn.png";
+    if (arr[arr.length - 1] == "checkOff.png") {
+        select.src = "images/checkOn.png";
     }
     // 클릭을 했기 때문에 해당 체크박스의 이미지 경로가 체크인 경우 비활성화 해준다.
     else{
-        select.src = "checkOff.png";
-        chk1.src = "checkOff.png";
+        select.src = "images/checkOff.png";
+        chk1.src = "images/checkOff.png";
     }
 
     // 2~5번째 체크박스이다.
@@ -49,14 +61,17 @@ function fnForChk1(select) {
     // 2~5 체크박스 중 비활성화 된게 있다면 cnt를 증가시켜준다.
     var cnt = 0;
     checkboxes.forEach((checkbox) => {
-        if (checkbox.src == "http://127.0.0.1:5500/03/20230316_SpringFramework_JunghanOh/checkOff.png")
+        var str = checkbox.src;
+        const arr = str.split("/");
+
+        if (arr[arr.length-1] == "checkOff.png")
             cnt++;
     })
 
     // 2~5 모두 체크되어 있다면
     if (cnt == 0)
         // 1번째 체크박스를 활성화 시켜준다.
-        chk1.src = "checkOn.png";
+        chk1.src = "images/checkOn.png";
 }
 
 // 필수 약관에 동의가 되어 있다면 다음 가입페이지로 넘어가는 함수
@@ -69,7 +84,10 @@ function next(){
     checkboxes.forEach((checkbox)=>{
         // 2~3번째 체크박스는 필수이기 때문에 두개가 체크되어 있는지 확인한다. 되어있으면 cnt를 증가시켜준다.
         if(indx==0 || indx==1){ 
-            if (checkbox.src == "http://127.0.0.1:5500/03/20230316_SpringFramework_JunghanOh/checkOn.png"){
+            var str = checkbox.src;
+            const arr = str.split("/");
+
+            if (arr[arr.length-1] == "checkOn.png"){
                 cnt++;
             }
         }
