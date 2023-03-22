@@ -197,13 +197,13 @@ function chkPassword() {
 
         // 자물쇠 표시를 바꿔준다.
         var doc3 = document.getElementById('lock1Img');
-        doc3.src = "lock3_1.png"
+        doc3.src = "images/lock3_1.png"
     }
     // 비밀번호가 올바르다면
     else {
         // 자물쇠 표시를 바꿔준다.
         var doc3 = document.getElementById('lock1Img');
-        doc3.src = "lock2_1.png"
+        doc3.src = "images/lock2_1.png"
 
         // 경고창에 공란
         var doc2 = document.getElementById('pilsu2');
@@ -227,7 +227,7 @@ function equalsPassword() {
         doc3.innerHTML = ""
         // 자물쇠 표시를 바꿔준다.
         var doc4 = document.getElementById('lock2Img');
-        doc4.src = "lock2_2.png"
+        doc4.src = "images/lock2_2.png"
 
         chk[2] = 1;
     }
@@ -240,7 +240,7 @@ function equalsPassword() {
 
         // 자물쇠 표시를 바꿔준다.
         var doc4 = document.getElementById('lock2Img');
-        doc4.src = "lock1_2.png"
+        doc4.src = "images/lock1_2.png"
     }
 }
 
